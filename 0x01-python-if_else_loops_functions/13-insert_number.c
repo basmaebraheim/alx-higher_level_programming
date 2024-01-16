@@ -6,7 +6,7 @@
  * insert_node - insert node in linked list
  * @head: pointer to head of list
  * @number: data for new node in list
- * Return: number of nodes
+ * Return: new node
  */
 listint_t *insert_node(listint_t **head, int number)
 {
