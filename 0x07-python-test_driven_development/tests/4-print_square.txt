@@ -1,0 +1,36 @@
+Import function from module
+    >>> print_square = __import__('4-print_square').print_square
+
+Test correct args:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Test 0 args:
+    >>> print_square(0)
+
+Test not int arg:
+    >>> print_square("basma")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Test float arg:
+    >>> print_square(.2)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Test less than 0 arg:
+    >>> print_square(-5)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Test empty arg:
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'

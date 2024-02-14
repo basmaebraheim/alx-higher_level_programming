@@ -1,0 +1,39 @@
+Import function from module
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test correct args:
+    >>> say_my_name("basma", "ewes")
+    My name is basma ewes
+
+Test one args:
+    >>> say_my_name("basma")
+    My name is basma 
+
+Test no args:
+    >>> say_my_name()
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Test empty string args:
+    >>> say_my_name("","")
+    My name is  
+
+Test first arg is not string:
+    >>> say_my_name(12,"ewes")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Test args are not string:
+    >>> say_my_name(12, 12)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+
+Test second arg is not string:
+    >>> say_my_name("basma", 12)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
