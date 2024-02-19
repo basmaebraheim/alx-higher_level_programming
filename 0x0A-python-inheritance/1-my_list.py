@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+"""
+module with MyList class
+"""
 class MyList(list):
     """inherits from list"""
     def __init__(self):
-        """initialize the object"""
+        """initializes the object"""
         super().__init__()
 
     def print_sorted(self):
-        """prints the list, but sorted"""
+        """prints the sorted list"""
         print(sorted(self))
