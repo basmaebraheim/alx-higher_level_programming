@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""base class"""
+
+
 class BaseGeometry:
     """based on 6"""
     def area(self):

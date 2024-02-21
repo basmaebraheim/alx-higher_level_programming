@@ -2,6 +2,7 @@
 """
 module with MyList class
 """
+
 class MyList(list):
     """inherits from list"""
     def __init__(self):
