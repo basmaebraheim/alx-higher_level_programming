@@ -3,6 +3,8 @@
 """
 Defines a class Rectangle
 """
+
+
 class Rectangle:
     """that defines a rectangle"""
 

@@ -5,6 +5,7 @@ queens on an N×N chessboard. Write a program that
 solves the N queens problem.
 """ 
 
+
 from sys import argv
 
 if __name__ == "__main__":
