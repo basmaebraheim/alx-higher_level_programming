@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""prints all City objects from the database hbtn_0e_14_usa"""
-
+""" prints the State object with the name passed as argument from the database
+"""
 import sys
 from model_state import Base, State
 from model_city import City
